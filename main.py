@@ -56,7 +56,7 @@ while True:
     else:
         p = input('try again:')
         if p == j:
-            print('you won')
+            print('you won!!')
             time.sleep(2)
             play_again = input('do u want to play again? y/n:')
             if play_again == 'n':
@@ -65,7 +65,7 @@ while True:
                 time.sleep(2)
                 break
         else:
-            sex44 = input('try again')
+            sex44 = input('try again:')
             if sex44 == j:
                 print('you won!!')
                 time.sleep(2)
