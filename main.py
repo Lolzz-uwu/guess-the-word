@@ -24,7 +24,6 @@ def sex():
         ss = list(random_word)
     word_length = len(random_word) -1
     first_pop = random.randrange(0,word_length)
-    #print(f'[word]-{}')
     ss.pop(word_length)
     j = ''.join(ss)
     ss.pop(first_pop)
