@@ -16,7 +16,7 @@ def sex():
     global sex2
     global random_word
     global j
-    with open('words.txt') as file:
+    with open('wordlist.txt') as file:
         o = []
         words = file.readlines()
         random_index = random.randrange(0,500)
