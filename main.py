@@ -2,16 +2,13 @@ import random
 import os
 import platform
 import time
+
 def clearing():
     if platform.system() == 'Linux':
         os.system('clear')
     elif platform.system() == 'Windows':
         os.system('cls')
-try:
-    s = open('wordlist.txt')
-    s.close()
-except Exception:
-    print('please download the worlist')
+
 def sex():
     global sex2
     global random_word
@@ -42,7 +39,12 @@ while True:
  \__, |\__,_|\___||___/___/  \__|_| |_|\___|   \_/\_/ \___/|_|  \__,_|
   __/ |                                                               
  |___/   ''')
-    sex()
+    try:
+        sex()
+    except:
+        clearing()
+        print('please download the wordlist')
+        break
     us = input('[answer]-:')
     if us == j:
         print('you won!!')
