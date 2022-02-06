@@ -8,7 +8,7 @@ def clearing():
     elif platform.system() == 'Windows':
         os.system('cls')
 try:
-    s = open('words.txt')
+    s = open('wordlist.txt')
     s.close()
 except Exception:
     print('please download the worlist')
